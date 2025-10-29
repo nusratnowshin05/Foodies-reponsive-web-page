@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: #f3fcf7;
+}
+
+header > section {
+  max-width: 1240px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul li a:hover {
+  color: #06c167;
+}
+
+nav > h1 {
+  color: #06c167;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .hamburger {
+    display: block;
+    color: #06c167;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    position: absolute;
+    top: -200px;
+    right: 0px;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    top: 70px;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+
+.banner h1 {
+  font-size: 75px;
+  line-height: 120%;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.banner p {
+  font-size: 16px;
+  color: #1d1d1fbf;
+  font-weight: 400;
+  line-height: 142%;
+}
+
+.banner-left {
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 20px;
+  width: 200px;
+  background-color: #06c167;
+  border-style: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
